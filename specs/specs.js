@@ -6,6 +6,13 @@ describe ('Pizza', function() {
     pizzaTest.manySlices();
     expect(pizzaTest.slices).to.equal(6); 
     });
+
+    it("will incorporate whole numbers for slices!", function(){
+    var pizzaTest = Object.create(Pizza);
+    pizzaTest.pizzaSize = 7;
+    pizzaTest.manySlices();
+    expect(pizzaTest.slices).to.equal(4); 
+    });
   });
 
   describe ('changePrice', function() {
