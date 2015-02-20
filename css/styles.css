@@ -11,3 +11,8 @@ body {
 	display: none;
 }
 
+h1 img {
+  height: 15%;
+  width: 15%;
+}
+
