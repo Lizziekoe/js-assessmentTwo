@@ -7,10 +7,6 @@ body {
   background-color: #FF5C33;
 }
 
-#pizzaCost {
-	display: none;
-}
-
 #results {
 	display: none;
 }

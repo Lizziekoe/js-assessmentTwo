@@ -26,7 +26,6 @@ $(function() {
     newPizza.manySlices();
     $("#pizzaCost").empty();
     $("#pizzaSize").val("");
-    $("#pizzaCost").show();
     $("#pizzaCost").text(newPizza.price);
     $("#pizzaSlices").text(newPizza.slices + ' Slices In It');
     $("#results").show();
