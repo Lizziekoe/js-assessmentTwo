@@ -1,4 +1,9 @@
-var Pizza = {pizzaSize: 10, pizzaType: "cheese", price: 8};
+var Pizza = {pizzaSize: 10, pizzaType: "cheese", price: 8, slices: 5};
+Pizza.manySlices = function() {
+  this.slices = this.pizzaSize/2;
+};
+
+
 Pizza.changePrice = function() {
   if (this.pizzaType = "pepperoni") {
   this.price = this.price + 1.5;

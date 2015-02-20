@@ -1,4 +1,13 @@
 describe ('Pizza', function() {
+  describe ('manySlices', function() {
+    it ("will tell how many slices based off pizzaSize", function(){
+    var pizzaTest = Object.create(Pizza);
+    pizzaTest.pizzaSize = 12;
+    pizzaTest.manySlices();
+    expect(pizzaTest.slices).to.equal(6); 
+    });
+  });
+
   describe ('changePrice', function() {
   	it ("will tell what the price is for default properties", function(){
   	var pizzaTest = Object.create(Pizza);
