@@ -24,8 +24,10 @@ $(function() {
     newPizza.pizzaSize = parseFloat($("#pizzaSize").val()); 
     newPizza.pizzaType = $('#type').val();
     newPizza.changePrice();
+    newPizza.manySlices();
     $("#pizzaCost").empty();
     $("#pizzaSize").val("");
     $("#pizzaCost").text(newPizza.price);
+    $("#pizzaSlices").text(newPizza.slices + ' Slices In It');
   });
 });
