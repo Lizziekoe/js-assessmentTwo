@@ -10,3 +10,16 @@ Pizza.changePrice = function() {
     this.price = this.price/2;
   }
 };
+
+
+$(function() {
+  $("#pizzaType").submit(function(event){
+  	event.preventDefault();
+    var newPizza = Object.create(Pizza);
+    newPizza.pizzaSize = parseFloat($("#pizzaSize").val()); 
+    newPizza.pizzaType = $('#type').val();
+    newPizza.changePrice();
+    $("#pizzaCost").empty();
+    $("#pizzaCost").text(newPizza.price);
+  });
+});
