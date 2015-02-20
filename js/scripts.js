@@ -7,7 +7,7 @@ Pizza.changePrice = function() {
     this.price = this.price + this.pizzaSize/4;
   }
   else if (this.pizzaSize < 10) {
-    this.price = this.price/2;
+    this.price = this.pizzaSize/2 + 2;
   }
 };
 
@@ -20,6 +20,7 @@ $(function() {
     newPizza.pizzaType = $('#type').val();
     newPizza.changePrice();
     $("#pizzaCost").empty();
+    $("#pizzaSize").val("");
     $("#pizzaCost").text(newPizza.price);
   });
 });

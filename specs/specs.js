@@ -23,7 +23,7 @@ describe ('Pizza', function() {
   	var pizzaTest = Object.create(Pizza);
   	pizzaTest.pizzaSize = 5;
   	pizzaTest.changePrice();
-  	expect(pizzaTest.price).to.equal(4.75);
+  	expect(pizzaTest.price).to.equal(4.5);
   	});
   });
 });
