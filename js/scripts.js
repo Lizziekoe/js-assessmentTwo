@@ -1,6 +1,5 @@
 var Pizza = {pizzaSize: 10, pizzaType: "cheese", price: 8, slices: 5};
 Pizza.manySlices = function() {
-
   this.slices = Math.ceil(this.pizzaSize/2);
 };
 
@@ -20,7 +19,6 @@ Pizza.changePrice = function() {
 
 $(function() {
   $("#pizzaType").submit(function(event){
-  	event.preventDefault();
     var newPizza = Object.create(Pizza);
     newPizza.pizzaSize = parseFloat($("#pizzaSize").val()); 
     newPizza.pizzaType = $('#type').val();
@@ -28,7 +26,10 @@ $(function() {
     newPizza.manySlices();
     $("#pizzaCost").empty();
     $("#pizzaSize").val("");
+    $("#pizzaCost").show();
     $("#pizzaCost").text(newPizza.price);
     $("#pizzaSlices").text(newPizza.slices + ' Slices In It');
+    $("#results").show();
+  	event.preventDefault();
   });
 });
