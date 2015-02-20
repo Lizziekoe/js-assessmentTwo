@@ -9,17 +9,19 @@
     <script src="js/scripts.js"></script>
   </head>
 <body>
+<h1 class="page-header">Pizza Company Yeah Yeah</h1>
   <div class="container">
     <div class="row">
       <div class = "col-md-6">
-        <form id="pizzaSize" class="well">
-
-
+        <form id="pizzaSizeForm" class="well">
+        <label for="pizzaSize">What Size Pizza? (In Inches)</label>
+        <input id="pizzaSize" class="form-control" autofocus>
         </form>
 
       </div>
       <div class="col-md-6">
         <form id="pizzaType" class="well">
+        <h4>Choose Your Pizza Type</h4>
           <select id="type">
             <option>Cheese</option> 
             <option>Pepperoni</option> 
@@ -34,8 +36,11 @@
 
 
     <div class="row">
-      
-
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+      <h2>Your Pizza Will Cost:<span id="pizzaCost"></span></h2>
+      </div>
+      <div class="col-md-2"></div>
     </div>
   </div>
 </body>
